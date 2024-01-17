@@ -1,0 +1,69 @@
+/* Styles for the pop-up container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    
+}
+
+/* Styles for the pop-up content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #b4860a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+/* Styles for the close button */
+.close-btn {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* Optional: Add some animation to the pop-up */
+.popup-content {
+    animation: scaleUp 0.3s step-end;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+    .popup-content {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for medium screens */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for large screens */
+}
+
+
+
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
